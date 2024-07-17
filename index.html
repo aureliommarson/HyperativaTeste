@@ -6,51 +6,57 @@
     <title>TesteHype</title>
     <style>
         body {
-            text-align: center; 
+            text-align: center; /* Centraliza todo o conteúdo */
             font-family: Arial, sans-serif; 
             color: #676767; 
         }
-        a.button {
+        /* Estilos dos botões */
+        a.button, a.buttonv, a.buttonc {
             display: inline-block;
             padding: 15px 30px; 
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
             font-size: 20px; 
-            border-radius: 8px; 
-            transition: background-color 0.3s ease;
-            width: 250px; 
-        }
-        a.button:hover {
-            background-color: #45a049;
-        }
-        a.buttonv {
-            display: inline-block;
-            padding: 15px 30px; 
-            background-color: #fafafa; 
-            color: #0059ff; 
-            text-decoration: none;
-            font-size: 20px; 
-            border: 2px solid #0059ff; 
             border-radius: 8px; 
             transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-            width: 250px; 
+            width: 250px;
+            text-decoration: none;
+        }
+        a.button {
+            background-color: hsl(122, 62%, 21%);
+            color: white;
+        }
+        a.button:hover {
+            background-color: #1c531e;
+        }
+        a.buttonv {
+            background-color: #fafafa; 
+            color: #0059ff; 
+            border: 2px solid #0059ff; 
+        }
+        a.buttonc {
+            background-color: #fffb00; 
+            color: #0059ff; 
+            border: 2px solid #0a0a0a; 
         }
         a.buttonv:hover {
             background-color: #0059ff;
             color: white; 
         }
+        /* Estilos do nome e do texto principal */
         .name {
             font-size: 24px; 
-            letter-spacing: 1px; 
+            letter-spacing: 1px;  
+            text-align: left;
+            text-align: center;
+            max-width: 87%;
         }
         .texto {
-            text-align: center; 
+            text-align: left; /* Alinha o texto à esquerda */
             max-width: 600px; 
-            margin: 0 auto; 
+            margin: 0 auto; /* Centraliza o bloco de texto */
             margin-bottom: 20px; 
             font-size: 25px; 
         }
+        /* Estilos das redes sociais */
         .social {
             margin-top: 20px; 
         }
@@ -64,10 +70,7 @@
             text-decoration: none; 
             color: #676767; 
         }
-        .logotip img {
-            pointer-events: none; 
-            
-        }
+        /* Estilos do rodapé */
         .fin {
             margin-top: 20px; 
         }
@@ -79,12 +82,13 @@
         }
         .textofinal {
             font-size: 14px; 
-            text-align: justify; 
+            text-align: justify; /* Justifica o texto */
             max-width: 600px; 
-            margin: 0 auto; 
+            margin: 0 auto; /* Centraliza o bloco de texto */
             margin-top: 20px; 
         }
-        .poster{
+        /* Estilo do pôster */
+        .poster {
             pointer-events: none;
         }
     </style>
@@ -121,7 +125,7 @@
 
     <div>
         <br>
-        <a href="https://api.whatsapp.com/send?text=Neste%20m%C3%AAs,%20o%20Instituto%20do%20C%C3%A2ncer%20Infantil%20preparou%20uma%20campanha%20especial%20para%20a%20luta%20contra%20o%20c%C3%A2ncer%20infantojuvenil.%20Saiba%20mais:%20https://bit.ly/3msdpQN" class="button">COMPARTILHE</a>
+        <a href="https://api.whatsapp.com/send?text=Neste%20m%C3%AAs,%20o%20Instituto%20do%20C%C3%A2ncer%20Infantil%20preparou%20uma%20campanha%20especial%20para%20a%20luta%20contra%20o%20c%C3%A2ncer%20infantojuvenil.%20Saiba%20mais:%20https://bit.ly/3msdpQN" class="buttonc">COMPARTILHE</a>
     </div>
 
     <div class="social">
